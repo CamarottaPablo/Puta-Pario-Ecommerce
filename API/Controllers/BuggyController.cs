@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using API.Errors;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -21,10 +17,8 @@ namespace API.Controllers
         {
             var thing = _context.Products.Find(42);
 
-            if(thing == null)
-            {
-                return NotFound(new ApiResponse(404));
-            }
+            if (thing == null) return NotFound(new ApiResponse(404));
+
             return Ok();
         }
 
