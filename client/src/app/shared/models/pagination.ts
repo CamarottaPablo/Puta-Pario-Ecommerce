@@ -6,5 +6,3 @@ import { IProduct } from "./product";
         count: number;
         data: IProduct[];
     }
-
-//Comentario de prueba
