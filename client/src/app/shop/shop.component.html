@@ -12,13 +12,21 @@
 
             <h5 class="text-waring ml-3">Marcas</h5>
             <ul class="list-group my-3">
-                <li class="list-group-item" *ngFor="let brand of brands">
+                <li class="list-group-item" 
+                    *ngFor="let brand of brands"
+                    [class.active]="brand.id === this.brandIdSelected"
+                    [value]="brand.id"
+                    (click)="onBrandSelected(brand.id)">
                     {{brand.name}}
                 </li>
               </ul>
-            <h5 class="text-waring ml-3">Tipos</h5>
+            <h5 class="text-waring ml-3">Categorias</h5>
             <ul class="list-group my-3">
-                <li class="list-group-item" *ngFor="let type of types">
+                <li class="list-group-item" 
+                    *ngFor="let type of types"
+                    [class.active]="type.id === this.typeIdSelected"
+                    [value]="type.id"
+                    (click)="onTypeSelected(type.id)">
                     {{type.name}}
                 </li>
             </ul>
