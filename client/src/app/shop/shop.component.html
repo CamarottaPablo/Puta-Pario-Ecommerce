@@ -3,10 +3,11 @@
 
         <section class="col-3">
             <h5 class="text-waring ml-3">Ordenar</h5>
-            <select class="custom-select mb-3">
-                <option selected>Alfabéticamente</option>
-                <option>Precio: Menor a Mayor</option>
-                <option>Precio: Mayor a Menor</option>
+            <select class="custom-select mb-3" (change)="onSortSelected($event.target.value)">
+                <option selected *ngFor="let sort of sortOptions"
+                        [value]="sort.value">
+                    {{sort.name}}
+                </option>
             </select>
 
 
