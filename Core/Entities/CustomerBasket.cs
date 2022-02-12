@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Core.Entities
 {
-    public class CurstomerBasket
+    public class CustomerBasket
     {
-        public CurstomerBasket()
+        public CustomerBasket()
         {
         }
 
-        public CurstomerBasket(string id)
+        public CustomerBasket(string id)
         {
             Id = id;
         }
