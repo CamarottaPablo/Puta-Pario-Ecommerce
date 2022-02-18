@@ -10,7 +10,13 @@
             <app-text-input formControlName="email" [label]="'Dirección de correo'"></app-text-input>
             <app-text-input formControlName="password" [label]="'Contraseña'" [type]="'password'"></app-text-input>
 
-            <button [disabled]="registerForm.invalid" class="btn btn-lg btn-primary btn-block" 
+            <ul class="text-danger list-unstyled" *ngIf="errors">
+              <li *ngFor="let error of errors">
+                {{error}}
+              </li>              
+            </ul>
+
+            <button class="btn btn-lg btn-primary btn-block" 
             type="submit">Registrarse</button>
           </form>
     </div>  
