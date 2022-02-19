@@ -21,5 +21,4 @@ export class CheckoutDeliveryComponent implements OnInit {
       console.log(error);
     });
   }
-
 }
