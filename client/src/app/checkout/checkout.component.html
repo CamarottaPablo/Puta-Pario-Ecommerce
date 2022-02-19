@@ -3,16 +3,16 @@
         <div class="col-8">
             <app-stepper [linearModeSelected]="false" #appStepper>
                 <cdk-step [label]="'Dirección'">
-                    Paso 1
+                    <app-checkout-address></app-checkout-address>
                 </cdk-step>
                 <cdk-step [label]="'Envío'">
-                    Paso 2
+                    <app-checkout-delivery></app-checkout-delivery>
                 </cdk-step>
                 <cdk-step [label]="'Detalle'">
-                    Paso 3
+                    <app-checkout-review></app-checkout-review>
                 </cdk-step>
                 <cdk-step [label]="'Pago'">
-                    Paso 4
+                    <app-checkout-payment></app-checkout-payment>
                 </cdk-step>
             </app-stepper>
         </div>
