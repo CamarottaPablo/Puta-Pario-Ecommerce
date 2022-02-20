@@ -1,30 +1,30 @@
 [
   {
     "Id": 1,
-    "ShortName": "UPS1",
+    "ShortName": "Envio rápido",
     "Description": "Rápido y furioso",
     "DeliveryTime": "1-2 Dias",
     "Price": 300
   },
   {
     "Id": 2,
-    "ShortName": "UPS2",
+    "ShortName": "Envío normal",
     "Description": "En breve",
     "DeliveryTime": "2-5 Dias",
     "Price": 200
   },
   {
     "Id": 3,
-    "ShortName": "UPS3",
-    "Description": "Lento pero barato",
-    "DeliveryTime": "5-10 Dias",
-    "Price": 100
+    "ShortName": "Retiro en sucursal San Miguel",
+    "Description": "Acercate!",
+    "DeliveryTime": "Disponibilidad inmediata",
+    "Price": 0
   },
   {
     "Id": 4,
-    "ShortName": "FREE",
-    "Description": "Gratis",
-    "DeliveryTime": "1-2 Dias",
+    "ShortName": "Retiro en showroom Nuñez",
+    "Description": "También en Capital",
+    "DeliveryTime": "Disponibilidad inmediata",
     "Price": 0
   }
 ]
